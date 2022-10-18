@@ -2,6 +2,7 @@
 // const { DB_USERNAME, DB_PASSWORD } = require(`./credentials`);
 
 // setting allowed app modes
+
 const ALLOWED_APP_MODES = [`DEV`, `STAGE`, `PROD`];
 
 // fetching app mode from environment
@@ -20,7 +21,7 @@ module.exports = {
 
   SERVER_ADDRESS: `http://localhost:4000`,
 
-  MONGO_ATLAS_CONNECTION_URI: `mongodb+srv://admin123:admin123@cluster0.rity7z3.mongodb.net/testData`,
+  MONGO_ATLAS_CONNECTION_URI: process.env.MONGODB_URL,
 
   ALLOWED_APP_MODES,
 
