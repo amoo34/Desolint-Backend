@@ -19,7 +19,7 @@ module.exports = {
 
   API_BASE_URL: `http://localhost:3001`,
 
-  SERVER_ADDRESS: `http://localhost:4000`,
+  SERVER_ADDRESS: `http://ec2-3-144-196-218.us-east-2.compute.amazonaws.com/`,
 
   MONGO_ATLAS_CONNECTION_URI: process.env.MONGODB_URL,
 
