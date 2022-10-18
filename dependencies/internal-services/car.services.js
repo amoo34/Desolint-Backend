@@ -95,7 +95,7 @@ const saveCarImage = async (userId, imageArray) => {
       // }
       // else{
       let filePaths = filePathDir.split("./")[1];
-      filePath.push(`${API_BASE_URL}/${filePaths}`);
+      filePath.push(`${SERVER_ADDRESS}/${filePaths}`);
       // }
     });
 

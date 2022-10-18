@@ -11,6 +11,7 @@ const {
 
 // importing response status codes
 const {
+  SERVER_ADDRESS,
   HTTP_STATUS_CODES: {
     SUCCESS,
     CREATED,
@@ -39,7 +40,7 @@ const addCar = async (req, res, next) => {
       } else {
         let filePath = [];
         req.files.forEach((file) => {
-          filePath.push(`http://localhost:3001/public/${file.originalname}`);
+          filePath.push(`${SERVER_ADDRESS}/public/${file.originalname}`);
         });
 
         const {
